@@ -12,3 +12,12 @@ st.write("""
         Este aplicativo visa fazer uma **demonstração** dos resultados referentes aos egressos de cursos de nível
         técnico e de graduação....
         """)
+
+df = read_excel('data/dm_saego.xlsx')
+
+st.sidebar.subheader("Filtros")
+
+unidades = list(df.unidade.unique())
+unidades_sel = st.sidebar.multiselect("Selecione uma unidade", options=unidades, default=unidades)
+
+st.dataframe(df.query('unidade.isin(@unidades_sel)'))
