@@ -4,7 +4,7 @@ from pandas import read_excel
 
 t1, t2 = st.columns((0.1, 0.8))
 t1.image('images/logo.png', width=75)
-t2.title("Inserção Ocupacional dos Egressos da REPCT")
+t2.title("Inserção Ocupacional dos Egressos da RFEPCT")
 
 st.markdown("**LEMA-UFPB**  🏴‍☠️  V 1.0")
 
