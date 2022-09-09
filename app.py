@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 import streamlit as st
-from pandas import read_excel
+from pandas import read_csv
 
 t1, t2 = st.columns((0.1, 0.8))
 t1.image('images/logo.png', width=75)
@@ -13,7 +13,7 @@ st.write("""
         técnico e de graduação....
         """)
 
-df = read_excel('data/dm_saego.xlsx')
+df = read_csv('data/dm_saego.csv')
 
 st.sidebar.subheader("Filtros")
 
