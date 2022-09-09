@@ -13,7 +13,7 @@ st.write("""
         técnico e de graduação....
         """)
 
-df = read_csv('data/dm_saego.csv')
+df = read_csv('data/dm_saego.csv', sep='|')
 
 st.sidebar.subheader("Filtros")
 
